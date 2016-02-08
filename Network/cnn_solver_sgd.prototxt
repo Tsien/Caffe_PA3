@@ -1,0 +1,24 @@
+train_net: "cnn_train_fine.prototxt"
+test_net: "cnn_test_fine.prototxt"
+
+test_iter: 100
+test_interval: 1000
+
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.001
+
+lr_policy: "step"
+stepsize: 100000
+gamma: 0.1
+power: 0.75
+
+display: 100
+
+max_iter: 350000
+
+snapshot: 150000
+snapshot_prefix: "cnn_snapshot"
+solver_mode: GPU
+
+type: "SGD"
