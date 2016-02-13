@@ -38,8 +38,8 @@ set xlabel "Training iterations"
 set ylabel "Training loss"
 
 # set input file here:
-plot "cifar100.log.train" using 1:3 title 'cifar100', \
-     "cifar100.log.test" using 1:4 
+plot "cifar100.log.train" using 1:3 title 'Training Loss', \
+     "cifar100.log.test" using 1:4 title 'Testing Loss'
 
 
 ###### Fields in the data file your_log_name.log.test are
